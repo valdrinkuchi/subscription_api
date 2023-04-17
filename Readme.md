@@ -108,3 +108,5 @@ python manage.py test
 
 In the `seed.py` there are 3 customers created, 10 Subscriptions that are billed monthly for each customer
 and 15 subscriptions that are billed quarterly.
+Although the logic is not fully implement for the billing of customers on the 1st day of each month. A service class and a management command is added to do this operation.
+The service is called `BillingService` and the cron job is scheduled as follows: `('0 0 1 * *', 'django.core.management.call_command', ['bill_customers'])`

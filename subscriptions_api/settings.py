@@ -130,5 +130,5 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CRONJOBS = [
-    ('* * * * *', 'django.core.management.call_command', ['bill_customers'])
+    ('0 0 1 * *', 'django.core.management.call_command', ['bill_customers'])
 ]
