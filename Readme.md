@@ -13,7 +13,7 @@
 
 - [decouple](https://pypi.org/project/python-decouple/) to load environment variables from .env into ENV
 
-### Deployment
+### Deployment and easy local setup
 
 - [Docker](https://www.docker.com/)
 
@@ -51,6 +51,10 @@ python manage.py seed
 
 ```bash
 python manage.py runserver
+
+or
+
+docker-compose up -d
 ```
 
 ### Running tests
