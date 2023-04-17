@@ -9,3 +9,4 @@ Pipfile
 .vscode
 docs
 README.md
+.db_data

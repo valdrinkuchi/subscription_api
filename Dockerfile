@@ -15,4 +15,4 @@ ENV PYTHONUNBUFFERED 1
 RUN pip install -r requirements.txt
 RUN chmod +x /usr/app/scripts/entrypoint.sh
 
-CMD ["entrypoint.sh"]
+CMD ["sh","/usr/app/scripts/entrypoint.sh"]

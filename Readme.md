@@ -40,7 +40,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-3. Setup Database. The `seed.py` file has dummy data to get started.
+1. Setup Database. The `seed.py` file has dummy data to get started.
 
 ```bash
 python manage.py migrate
@@ -91,6 +91,7 @@ python manage.py test
     'price': 5
     }
    ```
+
 3. Retrieve accumulated subsription price for a specific month for a individual customer:
 
    ```python
@@ -102,6 +103,7 @@ python manage.py test
    ```python
    GET: 0.0.0.0:3000/api/v1/accumulated-price-list/?month=4
    ```
+
 ### Examples
 
 In the `seed.py` there are 3 customers created, 10 Subscriptions that are billed monthly for each customer
