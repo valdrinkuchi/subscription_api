@@ -1,0 +1,11 @@
+venv/
+pg_data/
+Pipfile.lock
+Pipfile
+.pytest_cache
+.git
+.github
+.gitignore
+.vscode
+docs
+README.md

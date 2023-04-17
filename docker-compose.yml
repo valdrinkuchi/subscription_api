@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_PASSWORD: 123456
+      POSTGRES_USER: postgres
+      POSTGRES_DB: subscriptions_db
+    volumes:
+      - .db_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    networks:
+      - app-network
+  api:
+    depends_on:
+      - db
+    image: sub_api
+    volumes:
+      - .:/usr/app:z
+    ports:
+      - "8000:8000"
+    networks:
+      - app-network
+networks:
+  app-network:
+    driver: bridge
+volumes:
+  db_data:
