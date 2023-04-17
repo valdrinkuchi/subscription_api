@@ -16,7 +16,7 @@ services:
   api:
     depends_on:
       - db
-    image: sub_api
+    image: valdrinkuchi/subscription_api
     volumes:
       - .:/usr/app:z
     ports:
