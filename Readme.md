@@ -58,7 +58,7 @@ python manage.py runserver
 1. Run tests:
 
 ```bash
-python manage.py runserver
+python manage.py test
 ```
 
 ### Api-Overview
